@@ -172,4 +172,12 @@ width: 55px;
 height: 55px;
 font-size: 24px;
 }
+  .about {
+max-width: 800px;
+margin: 20px auto 0 auto;
+text-align: center;
+font-size: 1.1rem;
+line-height: 1.6;
+opacity: 0.9;
+}
 }
