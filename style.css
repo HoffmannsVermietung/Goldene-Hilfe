@@ -3,6 +3,39 @@ margin: 0;
 font-family: Arial, sans-serif;
 background: #eef3ef;
 color: #1c1c1c;
+padding-top: 45px;
+}
+
+/* TOPBAR */
+.topbar {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: #0f5f2a;
+color: white;
+z-index: 9999;
+font-size: 14px;
+}
+
+.topbar-inner {
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 8px 15px;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.topbar a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 4px 10px;
+background: #25D366;
+border-radius: 6px;
 }
 
 /* HERO */
@@ -66,51 +99,26 @@ background: white;
 color: #1fbf4a;
 }
 
-/* WICHTIG: KLARE SEKTIONEN (KEIN WEICHES DESIGN MEHR) */
+/* SECTIONS */
 section {
 padding: 80px 20px;
 }
 
-section .container {
-max-width: 1100px;
-margin: auto;
-background: white;
-padding: 40px;
-border-radius: 0;
-box-shadow: none;
-border-left: 6px solid #1fbf4a;
-}
-
-/* ALTERNIERENDE SEKTIONEN */
-section:nth-child(even) {
-background: #dfeee3;
-}
-
-/* TITEL */
-h2 {
-text-align: left;
-font-size: 2rem;
-margin-bottom: 25px;
-color: #0f5f2a;
-border-bottom: 3px solid #1fbf4a;
-display: inline-block;
-padding-bottom: 5px;
-}
-
-/* ABOUT */
 .about {
 background: white;
-padding: 30px;
-border-left: 6px solid #1fbf4a;
+padding: 35px;
 max-width: 900px;
 margin: auto;
+border-left: 6px solid #1fbf4a;
 }
 
 /* SERVICES */
-.grid {
+.services .grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 gap: 20px;
+max-width: 1100px;
+margin: auto;
 }
 
 .card {
@@ -120,24 +128,21 @@ border-left: 5px solid #1fbf4a;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* HÄRTERE TRENNUNG */
-.card h3 {
-margin-top: 0;
-color: #1fbf4a;
-}
-
 /* WHY */
 .why-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 gap: 10px;
+text-align: center;
+font-weight: bold;
+max-width: 900px;
+margin: auto;
 }
 
 .why-grid div {
 background: white;
 padding: 18px;
 border-left: 4px solid #1fbf4a;
-font-weight: bold;
 }
 
 /* FORM */
@@ -175,6 +180,12 @@ text-align: center;
 padding: 30px;
 }
 
+footer a {
+color: white;
+display: block;
+margin-top: 10px;
+}
+
 /* WHATSAPP */
 .whatsapp {
 position: fixed;
@@ -203,7 +214,14 @@ font-size: 2.2rem;
 padding: 25px;
 }
 
-section {
-padding: 50px 15px;
+.cta {
+flex-direction: column;
 }
+
+.topbar-inner {
+justify-content: center;
+text-align: center;
+}
+}
+
 }
